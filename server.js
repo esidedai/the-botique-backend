@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
   res.send('Welcome to the API Gateway!');
 });
 
-app.post('/api/new-thread', async (req, res) => {
+app.post('/thebotique/api/new-thread', async (req, res) => {
   try {
     const response = await axios.post(`${BASE_URL}/11ef5cba-dfb1-ab10-aeb8-2303c07df984/new-thread`, {}, {
       headers: {
@@ -60,7 +60,7 @@ app.post('/api/new-thread', async (req, res) => {
   }
 });
 
-app.post('/api/response', async (req, res) => {
+app.post('/thebotique/api/response', async (req, res) => {
   const { threadId, input } = req.body;
   try {
     const response = await axios.post(`${BASE_URL}/11ef5cba-dfb1-ab10-aeb8-2303c07df984/response`, { threadId, input }, {
@@ -79,7 +79,7 @@ app.post('/api/response', async (req, res) => {
 });
 
 // New route to handle streaming response from re:tune API
-app.post('/api/stream-response', async (req, res) => {
+app.post('/thebotique/api/stream-response', async (req, res) => {
   const { input } = req.body;
   const chatId = '11eee940-df2f-6cb0-bb38-d5792b1045ea';
 
