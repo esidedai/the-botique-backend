@@ -1,1 +1,1 @@
-# the-botique-backend
+# trade-ideas-backend
