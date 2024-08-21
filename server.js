@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 const API_KEY = '11ee5c6b-502d-f7f0-98ae-438dafef0754'; 
 const BASE_URL = 'https://retune.so/api/chat';
 
-app.get('/', (req, res) => {
+app.get('/thebotique/', (req, res) => {
   res.send('Welcome to the API Gateway!');
 });
 
@@ -81,7 +81,7 @@ app.post('/thebotique/api/response', async (req, res) => {
 // New route to handle streaming response from re:tune API
 app.post('/thebotique/api/stream-response', async (req, res) => {
   const { input } = req.body;
-  const chatId = '11eee940-df2f-6cb0-bb38-d5792b1045ea';
+  const chatId = '11ef5cba-dfb1-ab10-aeb8-2303c07df984';
 
   const data = {
     chatId: chatId,
