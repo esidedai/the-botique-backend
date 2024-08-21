@@ -5,7 +5,7 @@ const { v4: uuidv4 } = require('uuid'); // Add this line for UUID generation
 const app = express();
 
 const allowedOrigins = [
-    'https://legalresearch.vercel.app',
+    'https://theboutique.vercel.app',
     'http://localhost:3001'
 ];
 
